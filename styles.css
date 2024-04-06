@@ -98,3 +98,102 @@ img {
 .nav-link {
   color: #fff;
 }
+
+/* HEADER */
+.header {
+  padding: 0.8rem 2.2rem;
+  box-shadow: 0 3px 5px 0px rgba(191, 191, 191, 0.75);
+  z-index: 10;
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+}
+
+.search {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.search > label > span,
+.profile > span {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search input {
+  display: inline-block;
+  border: none;
+  background-color: #e2e8f0;
+  padding: 0.5rem 0.8rem;
+  margin-left: 1.25rem;
+  border-radius: 1.4rem;
+  width: min(70%, 550px);
+}
+
+.search input:focus {
+  outline: 1px solid #000;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  background: url("img/chihuahua-logo.jpg") center center / cover;
+  border-radius: 50%;
+}
+
+.header-interaction {
+  display: grid;
+  grid-template-columns: 70px 1fr 1fr;
+  align-items: center;
+  margin-top: 1.2rem;
+  gap: 1.1rem;
+}
+
+.interaction-logo {
+  width: 70px;
+  height: 70px;
+  background: url("img/chihuahua-logo.jpg") center center / cover;
+  border-radius: 50%;
+}
+
+.interaction-post {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.6rem;
+}
+
+.interaction-bold {
+  margin-top: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.interaction-post button {
+  margin-top: 0.4rem;
+  min-width: 110px;
+  background: #0284c7;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+}
+
+/* MAIN */
+.content {
+  background-color: #e5e7eb;
+}
