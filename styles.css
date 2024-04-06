@@ -43,7 +43,7 @@ img {
 /* General styles */
 .container {
   display: grid;
-  max-height: 100vh;
+  height: 100vh;
   grid-template-columns: 300px 1fr;
   grid-template-rows: auto 1fr;
 }
@@ -80,12 +80,12 @@ img {
 }
 
 .nav-link {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .sidebar-heading span,
 .nav-link span {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .nav-link,
@@ -104,6 +104,9 @@ img {
   padding: 0.8rem 2.2rem;
   box-shadow: 0 3px 5px 0px rgba(191, 191, 191, 0.75);
   z-index: 10;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
 }
 
 .search-container {
@@ -356,4 +359,23 @@ img {
 
 .trending-4 > .trending-picture {
   background: url("img/twinkie.jpg") center center / cover;
+}
+
+.interaction-logo,
+.profile-image,
+.trending-picture {
+  cursor: pointer;
+  transition: all ease-in 0.15s;
+}
+
+.interaction-logo:hover,
+.profile-image:hover,
+.trending-picture:hover {
+  transform: scale(1.1);
+}
+
+.interaction-button button {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
